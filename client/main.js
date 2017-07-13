@@ -1,5 +1,5 @@
 //Se importa la libreria React
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from './components/navbar';
 import Sidebar from './components/sidebar';
@@ -7,19 +7,21 @@ import Content from './components/content';
 import Quicksidebar from './components/quicksidebar';
 import Footer from './components/footer';
 
-const App = () => {
-  return (
-  <div>
-    <Navbar />
-    <div className="clearfix"> </div>
-    <div className="page-container">
-      <Sidebar />
-      <Content />
-      <Quicksidebar />
+ class App extends Component{
+  render (){
+    return (
+    <div>
+      <Navbar />
+      <div className="clearfix"> </div>
+      <div className="page-container">
+        <Sidebar />
+        <Content />
+        <Quicksidebar />
+      </div>
+    <Footer />
     </div>
- <Footer />
-  </div>
-  );
+    );
+  }
 };
 
 Meteor.startup(() => {
