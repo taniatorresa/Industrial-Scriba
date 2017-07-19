@@ -1,4 +1,5 @@
 import React from 'react';
+import Accounts from './accounts';
 
 const Nabvar = () => {
   return (
@@ -316,7 +317,7 @@ const Nabvar = () => {
               <li className="dropdown dropdown-user">
                 <a href="javascript:;" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                   <img alt className="img-circle" src="/assets/img/avatar3_small.jpg" />
-                  <span className="username username-hide-on-mobile"> Nick </span>
+                  <span className="username username-hide-on-mobile"> <Accounts /> </span>
                   <i className="fa fa-angle-down" />
                 </a>
                 <ul className="dropdown-menu dropdown-menu-default">
