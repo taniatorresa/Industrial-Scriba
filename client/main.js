@@ -1,32 +1,11 @@
 //Se importa la libreria React
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Navbar from './components/navbar';
-import Sidebar from './components/sidebar';
-import Content from './components/content';
-import Quicksidebar from './components/quicksidebar';
-import Footer from './components/footer';
-
- class App extends Component{
-  render (){
-    return (
-    <div>
-      <Navbar />
-      <div className="clearfix"> </div>
-      <div className="page-container">
-        <Sidebar />
-        <Content />
-        <Quicksidebar />
-      </div>
-    <Footer />
-    </div>
-    );
-  }
-};
+import App from './components/app';
 
 Meteor.startup(() => {
 //Render this component to the screen
-  ReactDOM.render(<App />, document.querySelector('.conteiner'));
+  ReactDOM.render(<App />, document.querySelector('.render-target'));
 
     jQuery.getScript("/assets/scripts/app.min.js", function() {
       App.init();
