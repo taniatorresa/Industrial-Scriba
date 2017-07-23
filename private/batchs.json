@@ -1,0 +1,29 @@
+[
+{
+  "Fecha":"2017.05.08 07:53:51",
+  "BatchID":"BATCH_ID",
+  "Recipe":"30094:BATCH_ID\\P3R1_TRANSFERENCIA_PT_SLV-1",
+  "Descript":" ",
+  "Event":"Event File Name",
+  "Value":"\\\\BATCH-SERVER\\BATCHCTL\\UNILEVER\\BATCH\\JOURNALS\\30094.evt",
+  "EU":"",
+  "Area":"UNIVELER_CUERNAVACA",
+  "ProcCell":"",
+  "Unit":"",
+  "Phase":"",
+  "PhaseDesc":"",
+  "UserID":"",
+  "UniqueID":"30094",
+  "MaterialName":"",
+  "MaterialID":"",
+  "LotName":"",
+  "Label":"","Container":"",
+  "PromiseID":" ",
+  "ReactivationNumber":"",
+  "InstructionHTML":"",
+  "SignatureID":"",
+  "ActionID":"0",
+  "ContextsID":"",
+  "Contexts":"","Signatura":"\r"
+  }
+]

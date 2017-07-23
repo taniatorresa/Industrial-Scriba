@@ -1,4 +1,5 @@
 import React from 'react';
+import Accounts from './accounts';
 
 const Nabvar = () => {
   return (
@@ -16,6 +17,7 @@ const Nabvar = () => {
           {/* END LOGO */}
           {/* BEGIN RESPONSIVE MENU TOGGLER */}
           <a href="javascript:;" className="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+
             <span />
           </a>
           {/* END RESPONSIVE MENU TOGGLER */}
@@ -316,7 +318,7 @@ const Nabvar = () => {
               <li className="dropdown dropdown-user">
                 <a href="javascript:;" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                   <img alt className="img-circle" src="/assets/img/avatar3_small.jpg" />
-                  <span className="username username-hide-on-mobile"> Nick </span>
+                  <span className="username username-hide-on-mobile"> </span>
                   <i className="fa fa-angle-down" />
                 </a>
                 <ul className="dropdown-menu dropdown-menu-default">

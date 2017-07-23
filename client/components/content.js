@@ -1,5 +1,8 @@
 //Se importa la libreria React
 import React from 'react';
+import Accounts from './accounts';
+import BatchsList from './batchs/batchs_list';
+
 
 const Content = () => {
   return (
@@ -11,7 +14,7 @@ const Content = () => {
           <div className="page-bar">
             <ul className="page-breadcrumb">
               <li>
-                <a href="index.html">Home</a>
+
                 <i className="fa fa-circle" />
               </li>
               <li>
@@ -19,7 +22,7 @@ const Content = () => {
                 <i className="fa fa-circle" />
               </li>
               <li>
-                <span>Page Layouts</span>
+                <span><Accounts /></span>
               </li>
             </ul>
             <div className="page-toolbar">
@@ -51,14 +54,11 @@ const Content = () => {
           </div>
           {/* END PAGE BAR */}
           {/* BEGIN PAGE TITLE*/}
-          <h1 className="page-title"> Blank Page Layout
-            <small>blank page layout</small>
-          </h1>
+          <h1 className="page-title"> Batchs List </h1>
+          <BatchsList />
           {/* END PAGE TITLE*/}
           {/* END PAGE HEADER*/}
-          <div className="note note-info">
-            <p> A black page template with a minimal dependency assets to use as a base for any custom page you create </p>
-          </div>
+
         </div>
         {/* END CONTENT BODY */}
       </div>
