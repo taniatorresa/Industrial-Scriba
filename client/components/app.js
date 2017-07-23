@@ -5,6 +5,7 @@ import Content from './content';
 import Quicksidebar from './quicksidebar';
 import Footer from './footer';
 
+
 export default () => {
   return (
     <div>
