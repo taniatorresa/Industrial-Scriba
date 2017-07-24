@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Accounts from './accounts';
-import { Link, browserHistory } from 'react-router';
 
 class Nabvar extends Component {
 
