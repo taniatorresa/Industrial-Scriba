@@ -1,19 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import {Route, Switch, BrowserRouter  } from 'react-router-dom';
 import App from './components/app';
 import Content from './components/content';
 import BatchsList from './components/batchs/batchs_list';
+import BatchShow from './components/batchs/batch_show';
 import { Link } from 'react-router'
 
 
 const routes = (
-<Router history={browserHistory}>
-  <Route path="/">
-      <IndexRoute component={App}/>
-      <Route path="batchs" component={BatchsList} />
-   </Route>
-</Router>
+<BrowserRouter>
+    <div>
+        <App/>
+        <Switch>
+        <Route exact path="/" component={BatchsList} />
+        <Route path="/batchs" component={BatchShow} />
+      </Switch>
+    </div>
+</BrowserRouter>
 );
 
 
