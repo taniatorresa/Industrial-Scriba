@@ -1,11 +1,25 @@
-//Se importa la libreria React
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import App from './components/app';
+import Content from './components/content';
+import BatchsList from './components/batchs/batchs_list';
+import { Link } from 'react-router'
+
+
+const routes = (
+<Router history={browserHistory}>
+  <Route path="/">
+      <IndexRoute component={App}/>
+      <Route path="batchs" component={BatchsList} />
+   </Route>
+</Router>
+);
+
 
 Meteor.startup(() => {
 //Render this component to the screen
-  ReactDOM.render(<App />, document.querySelector('.render-target'));
+  ReactDOM.render( routes , document.querySelector('.render-target'));
 
     jQuery.getScript("/assets/scripts/app.min.js", function() {
       App.init();

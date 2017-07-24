@@ -1,23 +1,16 @@
 import React from 'react';
 import Navbar from './navbar';
 import Sidebar from './sidebar';
-import Content from './content';
 import Quicksidebar from './quicksidebar';
 import Footer from './footer';
+import BatchsMain from './batchs/batchs_main';
 
-
-export default () => {
+export default (props) => {
   return (
-    <div>
-      <Navbar />
-      <div className="clearfix"> </div>
-      <div className="page-container">
-        <Sidebar />
-        <Content />
-        <Quicksidebar />
-      </div>
-    <Footer />
-    </div>
+  <div>
+
+        {props.children}
+</div>
 
   );
 }

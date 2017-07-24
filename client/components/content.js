@@ -3,14 +3,10 @@ import React from 'react';
 import Accounts from './accounts';
 import BatchsList from './batchs/batchs_list';
 
-
+console.log('Akita');
 const Content = () => {
   return (
-      <div className="page-content-wrapper">
-        {/* BEGIN CONTENT BODY */}
-        <div className="page-content">
-          {/* BEGIN PAGE HEADER*/}
-          {/* BEGIN PAGE BAR */}
+  <div>
           <div className="page-bar">
             <ul className="page-breadcrumb">
               <li>
@@ -52,16 +48,11 @@ const Content = () => {
               </div>
             </div>
           </div>
-          {/* END PAGE BAR */}
-          {/* BEGIN PAGE TITLE*/}
+
           <h1 className="page-title"> Batchs List </h1>
           <BatchsList />
-          {/* END PAGE TITLE*/}
-          {/* END PAGE HEADER*/}
+    </div>
 
-        </div>
-        {/* END CONTENT BODY */}
-      </div>
   );
 };
 
