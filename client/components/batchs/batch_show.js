@@ -1,4 +1,3 @@
-//Se importa la libreria React
 import React, { Component } from 'react';
 import { createContainer } from 'meteor/react-meteor-data';
 import { Batchs } from '../../../imports/collections/batchs';
@@ -7,27 +6,31 @@ import Sidebar from '../sidebar';
 import Quicksidebar from '../quicksidebar';
 import Footer from '../footer';
 
-
 class BatchShow extends Component {
-
   render() {
-
-    return (
-  <div>
-       <Navbar />
-      <div className="clearfix"> </div>
-      <div className="page-container">
-        <Sidebar />
-        <div className="page-content-wrapper">
-              <div className="page-content">
-              </div>
+    console.log(this.props.batch);
+   return (
+      <div>
+          <Navbar />
+          <div className="clearfix"> </div>
+            <div className="page-container">
+            <Sidebar />
+              <div className="page-content-wrapper">
+                  <div className="page-content">
+                    Batchs data
+                  </div>
+                </div>
+           <Quicksidebar />
             </div>
-       <Quicksidebar />
-       </div>
-          <Footer />
-  </div>
+              <Footer />
+      </div>
+
     );
   }
 }
 
-export default BatchShow;
+export default createContainer((props) => {
+    Meteor.subscribe('batchs');
+  const { batchId } = props.params;
+     return { batch: Batchs.findOne(batchId) };
+} , BatchShow);

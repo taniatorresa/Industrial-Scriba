@@ -10,7 +10,7 @@ import { Link } from 'react-router'
 const routes = (
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-      <IndexRoute component={BatchsList} />
+      <Route path="batchs" component={BatchsList} />
       <Route path="batchs/:batchId" component={BatchShow} />
     </Route>
   </Router>
