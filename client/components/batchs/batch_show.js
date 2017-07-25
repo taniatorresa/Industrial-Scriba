@@ -17,7 +17,7 @@ class BatchShow extends Component {
             <Sidebar />
               <div className="page-content-wrapper">
                   <div className="page-content">
-                    Batchs data
+
                   </div>
                 </div>
            <Quicksidebar />
